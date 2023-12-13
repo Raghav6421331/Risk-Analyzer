@@ -1,0 +1,149 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100;200;400&family=Mulish:ital,wght@1,200;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.classCritical {
+  color: #ffffff;
+  background-color: rgb(255, 102, 255, 0.5);
+  font-weight: bold;
+  border: 3px solid #ff66ff;
+  border-radius: 5px;
+}
+.classHigh {
+  color: #ffffff;
+  background-color: rgba(255, 0, 0, 0.5);
+  font-weight: bold;
+  border: 3px solid #ff0000;
+  border-radius: 5px;
+}
+.classMedium {
+  color: #000000;
+  background-color: rgba(255, 169, 0, 0.5);
+  font-weight: bold;
+  border: 3px solid #ffa900;
+  border-radius: 5px;
+}
+.classLow {
+  color: #000000;
+  background-color: rgba(255, 255, 0, 0.5);
+  font-weight: bold;
+  border: 3px solid #ffff00;
+  border-radius: 5px;
+}
+.classNote {
+  color: #000000;
+  background-color: rgba(144, 238, 144, 0.5);
+  font-weight: bold;
+  border: 3px solid #90ee90;
+  border-radius: 5px;
+}
+
+.risk {
+  width: 400px;
+  margin: 0 auto;
+}
+.riskChart {
+  margin-bottom: 10px;
+  color: white !important;
+}
+
+h1 {
+  font-weight: bold;
+}
+section {
+  padding: 10px;
+}
+.row {
+  display: flex;
+}
+.row > section {
+  flex: 1;
+}
+.nomargin {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  width: 1200px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES ----------------------- */
+@media screen and (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+}
+body {
+  /* background-color: #7a7171; */
+  /* background: linear-gradient(); */
+  background-image: linear-gradient(
+    to top,
+    #85b6eb,
+    #aec6f0,
+    #cfd7f5,
+    #e9eafa,
+    #ffffff
+  );
+}
+nav {
+  font-family: mulish;
+  margin-bottom: 30px !important;
+  /* color: white; */
+  width: 100%;
+  padding: 10px 5px;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.3);
+  /* border-radius: 50px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+}
+
+input,
+select,
+option {
+  background-color: rgb(214, 224, 228);
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+input:focus,
+option:focus {
+  background-color: transparent;
+}
+
+.border-bottom {
+  padding: 10px;
+  border-bottom: 2px solid #fff !important;
+}
+
+.row {
+  /* color: white; */
+  padding: 10px 5px;
+  background: rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); */
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  margin: 5px;
+}
